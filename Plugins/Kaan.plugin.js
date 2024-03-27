@@ -91,7 +91,7 @@ class Kaan {
 
     async updatePlugin(pluginName, currentVersion) {
         if (await this.isUpdateAvailable(pluginName, currentVersion)) {
-            const repoURL = `https://raw.githubusercontent.com/ImAFrogOwO/BDPlugins/main/Plugins/${pluginName}/${pluginName}.plugin.js`;
+            const repoURL = `https://raw.githubusercontent.com/Skyle59/BDPlugins/main/Plugins/${pluginName}/${pluginName}.plugin.js`;
             const destination = path.join(BdApi.Plugins.folder, `${pluginName}.plugin.js`);
 
             request.get(repoURL, async (error, response, body) => {
